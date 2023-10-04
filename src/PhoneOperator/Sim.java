@@ -7,7 +7,6 @@ public class Sim {
     private Double credit;
 
     public Sim(PhoneNumber num) {
-        PhoneNumber emptyNum = new PhoneNumber(0, 0);
         this.number = num;
         this.callList = new Call[5];
         this.credit = 0.0;
