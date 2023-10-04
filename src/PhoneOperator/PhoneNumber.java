@@ -12,4 +12,8 @@ public class PhoneNumber {
     public void printNumber() {
         System.out.println(this.prefix + "/" + this.num);
     }
+
+    public String getNumber() {
+        return this.prefix + "/" + this.num;
+    }
 }

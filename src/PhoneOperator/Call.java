@@ -6,7 +6,6 @@ public class Call {
     private final PhoneNumber destNumber;
     private final int durationSec;
 
-
     public Call(PhoneNumber from, PhoneNumber dest, int durationSec) {
         this.fromNumber = from;
         this.destNumber = dest;
@@ -14,7 +13,7 @@ public class Call {
     }
 
     public void printCall() {
-        System.out.println(this.fromNumber + " -> " + this.destNumber + " - " + (this.durationSec / 60) + ":" + (this.durationSec % 60));
+        System.out.println(this.fromNumber.getNumber() + " -> " + this.destNumber.getNumber() + " - " + (this.durationSec / 60) + ":" + (this.durationSec % 60));
     }
 }
 
